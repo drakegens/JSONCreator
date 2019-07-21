@@ -1,4 +1,5 @@
-﻿using System;
+﻿using JSONCreator.BusinessLogic;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,16 @@ namespace JSONCreator
         public MainWindow()
         {
             InitializeComponent();
+
+            var x = new JSONObjectCreator();
+            var myDict = new Dictionary<string, string>
+        {
+            { "key1", "value1" },
+            { "key2", "value2" }
+        };
+            x.createJSONObject(myDict);
+
+
         }
     }
 }
