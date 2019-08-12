@@ -35,5 +35,14 @@ namespace JSONCreator
 
 
         }
+
+        private void SubmitBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Console.WriteLine("Hey i clicked");
+            //needs to take the dictionary and spit out a json
+
+            //how to access the textbox values and fill in the textblock with a json string
+
+        }
     }
 }
