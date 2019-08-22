@@ -16,33 +16,15 @@ using System.Windows.Shapes;
 
 namespace JSONCreator
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
+    /// <inheritdoc cref="" />
+    public partial class MainWindow : UserControl
     {
         public MainWindow()
         {
             InitializeComponent();
 
-            var x = new JSONObjectCreator();
-            var myDict = new Dictionary<string, string>
-        {
-            { "key1", "value1" },
-            { "key2", "value2" }
-        };
-            x.createJSONObject(myDict);
-
 
         }
 
-        private void SubmitBtn_Click(object sender, RoutedEventArgs e)
-        {
-            Console.WriteLine("Hey i clicked");
-            //needs to take the dictionary and spit out a json
-
-            //how to access the textbox values and fill in the textblock with a json string
-
-        }
     }
 }

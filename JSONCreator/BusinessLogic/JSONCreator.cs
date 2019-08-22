@@ -7,12 +7,11 @@ using System.Threading.Tasks;
 
 namespace JSONCreator.BusinessLogic
 {
-    class JSONObjectCreator
+    public static class JSONObjectCreator
     {
-        public string createJSONObject(Dictionary<string, string> jsonObject)
+        public static string CreateJsonObject(Dictionary<string, string> jsonObject)
         {
             string result = JsonConvert.SerializeObject(jsonObject);
-            Console.WriteLine("JSON object: " + result);
             return result;
         }
 

@@ -59,7 +59,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="RelayCommand.cs" />
     <Compile Include="Model\NameAndValues.cs" />
+    <Compile Include="Properties\Annotations.cs" />
     <Compile Include="ViewModel\ObservableObject.cs" />
     <Compile Include="ViewModel\DelegateCommand.cs" />
     <Page Include="MainWindow.xaml">
